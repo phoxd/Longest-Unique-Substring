@@ -6,9 +6,9 @@ using namespace std;
 
 class Solution {
 public:
+  // can handle only lower and upper case characters
   int lengthOfLongestSubstring(string s) {
     if(s.size() == 0) return -1;
-    string alphabet = "abcdefghijklmnopqrstuvwxyz";
     int abc[26*2] = {0};
     vector<string> subStr;
     string seq;
